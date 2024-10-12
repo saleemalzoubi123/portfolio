@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1728772365057,
+  "timestamp": 1728772701944,
   "index": "/sss/index.html",
   "assetGroups": [
     {
@@ -428,7 +428,7 @@
     "/sss/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/sss/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/sss/favicon.ico": "6de2cc94480da6d392bbb61d6672f7dddb754fb6",
-    "/sss/index.html": "5b3c3d616af0231c2975cc8e5582cdea7be698ec",
+    "/sss/index.html": "e97737b29eedef9bcbe6c6251bf263d6b9161442",
     "/sss/main.cb5a5a25d7b19b49.js": "e341b1057f1bd21fd5c5e13d704011ee48897bb1",
     "/sss/manifest.webmanifest": "a72f6f2e84abfca8663c1f88addefc2543f50916",
     "/sss/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
