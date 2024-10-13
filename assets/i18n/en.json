@@ -166,7 +166,7 @@
       "Title": "AlManhal for the Ministry of Education in the UAE",
       "Description": "The project for the Ministry of Education in the UAE is a comprehensive system designed to manage schools, departments, financial details, students, classrooms, exams, courses, quizzes, and marks. It also handles high school results and generates certificates using custom Word templates, exporting them to PDF. Additionally, the system includes a reporting module that allows data export in various file formats and extensions, providing a streamlined solution for the ministry’s educational management needs.",
       "imgs": [
-        "/assets/images/projects/manhal/manhal-1.png"
+        "assets/images/projects/manhal/manhal-1.png"
       ],
       "Technologies": ["Java", "Springboot", "SQL", "Jasper Reports", "Angular", "Google Web Toolkit(GWT)"]
     },
@@ -174,7 +174,7 @@
       "Title": "Electronic Check Clearing (ECC) Suite  - Banks",
       "Description": "The Electronic Check Clearing (ECC) Suite revolutionizes the traditional process of handling paper checks by transforming it into a fully digital, secure, and end-to-end solution across the entire check life cycle. This system drastically reduces operational costs and time associated with check issuance and clearing. It supports nationwide implementation models, including distributed, application service provider, or hybrid models, tailored to the country’s payment landscape and efficiency needs. The PS-ECC provides intelligent business tools for administrators to monitor transactions and optimize system performance. Its extensive reporting features allow for detailed tracking and auditing through various analytical and end-of-day reports. With advanced security, seamless integrations, scalability, and a modern cloud-enabled infrastructure, PS-ECC ensures a safe and efficient clearing environment for financial institutions.",
       "imgs": [
-        "/assets/images/projects/manhal/manhal-1.png"
+        "assets/images/projects/manhal/manhal-1.png"
       ],
       "Technologies": ["Microservices","Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Angular", "Android", "Swift", "SQL", "Jasper Reports"]
     },

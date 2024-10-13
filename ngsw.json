@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1728775720129,
+  "timestamp": 1728839840947,
   "index": "/portfolio/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/portfolio/favicon.ico",
         "/portfolio/index.html",
-        "/portfolio/main.cb5a5a25d7b19b49.js",
+        "/portfolio/main.c0b4d64730cde456.js",
         "/portfolio/manifest.webmanifest",
         "/portfolio/polyfills.d5164d2c46c90970.js",
         "/portfolio/runtime.3473b9fc8f90cf27.js",
@@ -304,7 +304,7 @@
     "/portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff": "4bb2ddc7da8064698328e123bd3ec673f674a90d",
     "/portfolio/assets/fonts/SFMono/SFMono-SemiboldItalic.woff2": "3621c6894388833626fd4cf132087a3f46a54a21",
     "/portfolio/assets/fonts/SFMono/stylesheet.css": "9d845bf2b6a9e53e38bfc797758fbe38c2b99470",
-    "/portfolio/assets/i18n/en.json": "a67c7f85e777f297fb107e71e0adea3159d2b946",
+    "/portfolio/assets/i18n/en.json": "38d84f6fae479363ec6e6cef64ae7e2d6e684783",
     "/portfolio/assets/i18n/es.json": "38b4ac26a5e9a8f326763087e978c372b7904fbc",
     "/portfolio/assets/icons/folder.svg": "024e52150f03c8e0f77d17979a27ae94830678be",
     "/portfolio/assets/images/abaco-proyect.png": "0095f0c5f35ac7fe33fabbf9c3a5d51ecc42f0be",
@@ -428,8 +428,8 @@
     "/portfolio/fa-solid-900.d5b0a3566b352ee9.ttf": "eb8914f6b1797b45ee0883e6089d92695d9f9441",
     "/portfolio/fa-solid-900.e67670b0779338ff.woff": "a22acd7697f36e7d4cc31a853c70e776eac54bb1",
     "/portfolio/favicon.ico": "6de2cc94480da6d392bbb61d6672f7dddb754fb6",
-    "/portfolio/index.html": "106962e166e045e601780c5d3174ef3821cc4313",
-    "/portfolio/main.cb5a5a25d7b19b49.js": "e341b1057f1bd21fd5c5e13d704011ee48897bb1",
+    "/portfolio/index.html": "ad0d4595e95e1052292059cac87b8bf95d03678e",
+    "/portfolio/main.c0b4d64730cde456.js": "7bb27e81c9577e0d8686809191f32c514bc8094a",
     "/portfolio/manifest.webmanifest": "a72f6f2e84abfca8663c1f88addefc2543f50916",
     "/portfolio/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/portfolio/polyfills.d5164d2c46c90970.js": "2f1d852af229ba84db2d9aab3c549ca4423eaa0a",
