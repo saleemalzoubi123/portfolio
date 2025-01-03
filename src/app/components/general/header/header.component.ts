@@ -62,7 +62,7 @@ export class HeaderComponent implements OnInit {
   // tslint:disable-next-line:typedef
   openCV() {
     // Replace the URL below with your actual public Google Drive link
-    const cvUrl = 'https://drive.google.com/file/d/0BxQMJ0lBt4aSRjB5WlRGczNQU0NnNm05cVYzTlJtcmJoVzZr/view?usp=sharing&resourcekey=0-p4TLt2qmAdGIqwH3l-cWXA';
+    const cvUrl = 'https://drive.google.com/file/d/1M1y0zL81gOxsH7hUAedRbeGeJG8vDQAB/view?usp=drive_link';
     window.open(cvUrl, '_blank'); // Opens in a new tab
   }
 
