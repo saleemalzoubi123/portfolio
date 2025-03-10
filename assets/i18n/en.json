@@ -3,6 +3,7 @@
   "Header.Item2": "Experience",
   "Header.Item3": "Projects",
   "Header.Item4": "Contact",
+  "Header.Item5": "Documents",
   "Header.cvBtn": "Resume",
   "Header.cvName": "CV_Jose_Hernandez_Spanish.pdf",
 
@@ -131,7 +132,7 @@
         "assets/images/projects/musaned/musaned-10.png",
         "assets/images/projects/musaned/musaned-11.png"
       ],
-      "Technologies": ["Microservices","Springboot", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Apache Tomcat", "OAuth2", "JWT"]
+      "Technologies": ["Microservices","Apache Kafka","AWS S3","Springboot", "Angular", "Postgresql", "Java 21", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Apache Tomcat", "OAuth2", "JWT"]
     },
     {
       "Title": "Hajj Project for the Ministry of Hajj and Umrah",
@@ -159,7 +160,7 @@
         "assets/images/projects/muritania/muritania-7.png",
         "assets/images/projects/muritania/muritania-8.png"
       ],
-      "Technologies": ["Microservices","Springboot", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Apache Tomcat","OAuth2", "JWT"]
+      "Technologies": ["Microservices","Springboot","Apache Kafka", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Apache Tomcat","OAuth2", "JWT"]
     },
     {
       "Title": "AlManhal for the Ministry of Education in the UAE",
@@ -276,5 +277,68 @@
   "Contact.Pretitle": "And... Now?",
   "Contact.Title": "Say Hi!",
   "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
-  "Contact.Btn": "Contact Me"
+  "Contact.Btn": "Contact Me",
+
+  "Documents.Title": "Documents",
+  "Documents.items": [
+    {
+      "Tab": "Clean Code",
+      "Title": "Principles of Clean Code",
+      "Description": [
+        "<span class='underline'>▹ Meaningful Names:</span> <ul><li> Use descriptive and clear variable, method, and class names.</li><li>Avoid abbreviations and misleading names.</li><li>Follow consistent naming conventions.</li></ul>",
+
+        "<span class='underline'>▹ Small Functions:</span> <ul><li>Keep functions small and focused on a single task.</li> <li>Avoid long parameter lists.</li> <li>Follow the Single Responsibility Principle (SRP).</li></ul>",
+
+        "<span class='underline'>▹ Encapsulation and Data Hiding:</span> <ul><li>Use private fields and provide controlled access via getters and setters.</li><li>Reduce unnecessary public exposure.</li></ul>",
+
+        "<span class='underline'>▹ Code Formatting and Readability:</span> <ul><li>Follow consistent indentation and spacing.</li><li>Use standard Java coding conventions.</li><li>Keep lines of code short (~80-100 characters per line).</li></ul>",
+
+        "<span class='underline'>▹ Exception Handling Best Practices:</span> <ul><li>Use specific exceptions instead of generic Exception or Throwable.</li><li>Avoid empty catch blocks.</li><li>Log exceptions appropriately.</li></ul> ",
+
+        "<span class='underline'>▹ Unit Testing and Code Coverage</span> <ul><li>Write unit tests for all critical business logic.</li><li>Use JUnit and Mockito for testing.</li><li>Ensure high code coverage without compromising test quality.</li></ul>",
+
+        "<span class='underline'>▹ SOLID Principles:</span> <ul><li><span class='underline'>S:</span> Single Responsibility Principle (SRP) - A class should have only one reason to change. It should focus on a single responsibility.</li><li><span class='underline'>O:</span> Open/Closed Principle (OCP) - Software entities should be open for extension but closed for modification.</li><li><span class='underline'>L:</span> Liskov Substitution Principle (LSP) - Subtypes must be substitutable for their base types without altering correctness.</li><li><span class='underline'>I:</span> Interface Segregation Principle (ISP) - Clients should not be forced to depend on interfaces they do not use.</li><li><span class='underline'>D:</span> Dependency Inversion Principle (DIP) - High-level modules should not depend on low-level modules; both should depend on abstractions.</li></ul>"
+      ]
+    },
+    {
+      "Tab": "Amazon Leadership Principles",
+      "Title": "Amazon Leadership Principles",
+      "Description": [
+        "<span class='underline'>▹ Customer Obsession:</span> Leaders start with the customer and work backward. They strive to earn and keep customer trust by focusing on their needs over competitors.",
+        "<span class='underline'>▹ Ownership:</span> Leaders act on behalf of the entire company, beyond just their teams. They never say, \"That’s not my job.",
+        "<span class='underline'>▹ Invent and Simplify:</span> Leaders seek out new ideas and innovate. They simplify processes to drive efficiency and effectiveness.",
+        "<span class='underline'>▹ Are Right, A Lot:</span> Leaders have strong judgment and instincts, making informed decisions. They seek diverse perspectives and challenge their own assumptions.",
+        "<span class='underline'>▹ Learn and Be Curious:</span> Leaders are never done learning. They constantly seek to improve themselves and explore new possibilities.",
+        "<span class='underline'>▹ Hire and Develop the Best:</span>Leaders hire exceptional talent and develop them. They mentor others and help them grow.",
+        "<span class='underline'>▹ Insist on the Highest Standards:</span> Leaders continuously raise the bar and drive excellence. They ensure that issues are fixed properly.",
+        "<span class='underline'>▹ Think Big:</span> Leaders create bold visions and inspire results. They look beyond short-term goals to achieve long-term impact.",
+        "<span class='underline'>▹ Bias for Action:</span> Speed matters in business. Leaders make decisions quickly and take calculated risks.",
+        "<span class='underline'>▹ Frugality:</span> Leaders do more with less. They find ways to be resourceful and cost-effective.",
+        "<span class='underline'>▹ Earn Trust:</span> Leaders are honest, transparent, and self-critical. They listen attentively and treat others with respect.",
+        "<span class='underline'>▹ Dive Deep:</span> Leaders operate at all levels and stay connected to details. No task is beneath them.",
+        "<span class='underline'>▹ Have Backbone; Disagree and Commit:</span> Leaders respectfully challenge decisions when necessary. Once a decision is made, they commit fully.",
+        "<span class='underline'>▹ Deliver Results:</span> Leaders focus on key inputs and deliver results with quality and efficiency.",
+        "<span class='underline'>▹ Strive to be Earth’s Best Employer:</span> Leaders create a safe, productive, and inclusive work environment. They support employee well-being.",
+        "<span class='underline'>▹ Success and Scale Bring Broad Responsibility:</span> Leaders recognize the impact of their actions on society. They act with integrity and responsibility."
+      ]
+    },
+    {
+      "Tab": "12-Factor",
+      "Title": "The 12-Factor App Methodology",
+      "Description": [
+        "<span class='underline'>▹ Codebase:</span> <ul><li><span class='underline'>One codebase tracked in revision control, many deploys.</span></li><li>Maintain a single codebase per application, stored in a version control system (e.g., Git).</li><li>Multiple deployments (e.g., dev, staging, production) should derive from the same codebase.</li></ul>",
+        "<span class='underline'>▹ Dependencies:</span> <ul><li><span class='underline'>Explicitly declare and isolate dependencies.</span></li><li>Manage dependencies explicitly using dependency management tools (e.g., Maven, Gradle, npm, pip).</li><li>Avoid system-wide dependencies to ensure portability and consistency.</li></ul>",
+        "<span class='underline'>▹ Configuration:</span> <ul><li><span class='underline'>Store config in the environment.</span></li><li>Configuration (e.g., database URLs, API keys) should be stored in environment variables.</li><li>Do not hardcode configuration values in the codebase.</li></ul>",
+        "<span class='underline'>▹ Backing Services:</span> <ul><li><span class='underline'>Treat backing services as attached resources.</span></li><li>Databases, message brokers, caching layers, and other services should be treated as external resources.</li><li>Connection details should be specified via configuration, not hardcoded.</li></ul>",
+        "<span class='underline'>▹ Build, Release, Run:</span> <ul><li><span class='underline'>Strictly separate build and run stages.</span></li><li>Build stage: Converts the codebase into an executable bundle.</li><li>Release stage: Combines the build with configuration.</li><li>Run stage: Executes the application using the release.</li></ul>",
+        "<span class='underline'>▹ Processes:</span> <ul><li><span class='underline'>Execute the app as one or more stateless processes.</span></li><li>Applications should be stateless; any session data should be stored in external backing services (e.g., Redis, databases).</li><li>Processes should be share-nothing and scale horizontally.</li></ul>",
+        "<span class='underline'>▹ Port Binding:</span> <ul><li><span class='underline'>Export services via port binding.</span></li><li>The application should expose its functionality by binding to a port.</li><li>HTTP applications should not depend on external web servers (e.g., Apache, Nginx).</li></ul>",
+        "<span class='underline'>▹ Concurrency:</span> <ul><li><span class='underline'>Scale out via the process model.</span></li><li>The application should be designed to run multiple processes to handle different workloads.</li><li>Stateless processes can be scaled horizontally as demand increases.</li></ul>",
+        "<span class='underline'>▹ Disposability:</span> <ul><li><span class='underline'>Maximize robustness with fast startup and graceful shutdown.</span></li><li>Applications should start quickly to handle increased load and shut down gracefully to avoid service disruption.</li><li>Use signals (e.g., SIGTERM) to handle shutdowns cleanly.</li></ul>",
+        "<span class='underline'>▹ Dev/Prod Parity:</span> <ul><li><span class='underline'>Keep development, staging, and production as similar as possible.</span></li><li>Ensure parity between development and production environments.</li><li>Use similar dependencies, configurations, and workflows in all environments.</li></ul>",
+        "<span class='underline'>▹ Logs:</span> <ul><li><span class='underline'>Treat logs as event streams.</span></li><li>Applications should not manage log files; instead, logs should be sent to stdout/stderr.</li><li>Use log aggregators (e.g., ELK, Loki, Splunk) to centralize and analyze logs.</li></ul>",
+        "<span class='underline'>▹ Admin Processes:</span> <ul><li><span class='underline'>Run admin/management tasks as one-off processes.</span></li><li>Administrative tasks (e.g., database migrations, batch jobs) should be executed as separate processes.</li><li>These tasks should be run using the same environment as the application.</li></ul>"
+              ]
+    }
+  ]
 }
