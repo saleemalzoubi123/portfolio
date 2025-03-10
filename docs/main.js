@@ -1076,7 +1076,7 @@ class HomeModule {
 
 /***/ 2019:
 /*!********************************************************!*\
-  !*** ./src/app/components/home/jobs/jobs.component.ts ***!
+  !*** ./src/app/components/home/jobs/documents.component.ts ***!
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
