@@ -1,104 +1,205 @@
 @import "./../../../../variables.scss";
 
 .about {
-
   .about-description {
     margin-top: 30px;
-    max-width: 480px;
+    max-width: 520px;
   }
 
   .about-img-container {
-    width: 324px;
-    margin: auto;
     position: relative;
+    display: inline-block;
+    max-width: 360px;
 
     &:after {
       content: '';
-      border: 2px solid $Green;
-      z-index: 0;
-      display: block;
       position: absolute;
-      width: 400px;
-      height: 500px;
-      border-radius: 3px;
-      bottom: 30px;
-      left: 23px;
+      inset: 16px -16px -16px 16px;
+      border: 2px solid rgba(91, 157, 255, 0.55);
+      border-radius: 14px;
+      z-index: 0;
     }
 
     img {
-      z-index: 2;
       position: relative;
+      z-index: 1;
+      width: 100%;
+      height: auto;
+      border-radius: 14px !important;
+      object-fit: cover;
+      box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
     }
   }
 
-  .skills-list {
+  .sub-heading {
+    color: $LightestSlate;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 70px 0 20px;
+  }
+
+  // Certifications
+  .cert-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
-    overflow: hidden;
-    padding: 0;
-    margin: 20px 0 0;
-    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
   }
 
-  .skill-element {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
+  .cert-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: $LightNavy;
+    border: 1px solid $LightestNavy;
+    border-radius: 12px;
+  }
+
+  .cert-icon {
+    flex: 0 0 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $GreenOpacity;
+    color: $Green;
+    font-size: 20px;
+  }
+
+  .cert-name {
+    color: $LightestSlate;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .cert-issuer {
     font-size: 13px;
-    font-family: $CodeFont;
     color: $Slate;
+  }
 
-    span {
-      padding-bottom: 5px;
+  // Skills
+  .skill-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-group {
+    background: $LightNavy;
+    border: 1px solid $LightestNavy;
+    border-radius: 12px;
+    padding: 22px 22px 16px;
+  }
+
+  .skill-group-title {
+    color: $LightestSlate;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $LightestNavy;
+  }
+
+  .skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      font-size: 13px;
+      font-weight: 500;
+      color: $LightSlate;
+      background: $GreenOpacity;
+      border: 1px solid rgba(91, 157, 255, 0.25);
+      border-radius: 999px;
+      padding: 4px 12px;
+      line-height: 1.5;
+    }
+  }
+
+  // Architecture diagram
+  .diagram-caption {
+    max-width: 720px;
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+
+  .diagram-scroll {
+    overflow-x: auto;
+    padding: 28px;
+    background: $LightNavy;
+    border: 1px solid $LightestNavy;
+    border-radius: 14px;
+  }
+
+  .arch {
+    display: block;
+    width: 100%;
+    min-width: 760px;
+    height: auto;
+    font-family: $MainFont;
+
+    text { text-anchor: middle; }
+
+    .layer-label {
+      text-anchor: start;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      fill: $Slate;
     }
 
-    &:before {
-      content: '▹';
-      position: absolute;
-      left: 0;
-      color: $Green;
-      font-size: 14px;
-      line-height: 12px;
+    .ext-title { text-anchor: middle; }
+
+    .node rect {
+      fill: #16233d;
+      stroke: #2c3d5e;
+      stroke-width: 1.2;
     }
+    .t { font-size: 13.5px; font-weight: 600; fill: $LightestSlate; }
+    .s { font-size: 10.5px; fill: $Slate; }
+
+    .node-accent rect { stroke: $Green; fill: rgba(91, 157, 255, 0.1); }
+    .node-ai rect { stroke: $Gold; fill: rgba(214, 180, 106, 0.08); }
+    .node-bus rect { fill: rgba(91, 157, 255, 0.18); stroke: $Green; }
+    .node-data rect { fill: #13203a; }
+    .node-platform rect { fill: transparent; stroke-dasharray: 5 4; }
+    .node-platform .t { font-weight: 500; fill: $LightSlate; }
+    .node-ext rect { fill: transparent; stroke-dasharray: 5 4; }
+
+    .arrow-head { fill: #5d6f92; }
+
+    .flow {
+      fill: none;
+      stroke: #5d6f92;
+      stroke-width: 1.5;
+      stroke-dasharray: 4 4;
+      marker-end: url(#arch-arrow);
+      animation: arch-flow 1.2s linear infinite;
+    }
+    .flow-event { stroke: $Green; }
+    .flow-ext { stroke: $Gold; }
   }
 }
 
-/* Media Queries */
-@media (min-width: 992px) and (max-width: 1300px) {
-  .about-img-container {
-    margin-left: auto;
-    margin-right: 0;
-  }
+@keyframes arch-flow {
+  to { stroke-dashoffset: -16; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about .arch .flow { animation: none; }
 }
 
 @media (max-width: 500px) {
-  .about {
+  .about .about-img-container {
+    max-width: 260px;
 
-    .about-img-container {
-      width: 100%;
-
-      img {
-        width: 70%;
-        height: 70%;
-      }
-
-      &:after {
-        display: none;
-      }
-
-      &.small-image {
-        img {
-          width: 200px;
-          height: 200px;
-        }
-
-        &:after {
-          width: 200px;
-          height: 200px;
-          bottom: 190px;
-          left: 74px;
-        }
-      }
-    }
+    &:after { display: none; }
   }
+  .about .diagram-scroll { padding: 16px; }
 }

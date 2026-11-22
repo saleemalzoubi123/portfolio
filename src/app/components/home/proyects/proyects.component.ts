@@ -1,49 +1,63 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
-import {LanguageService} from "../../../services/language/language.service";
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
+
+export interface Project {
+  Title: string;
+  Company?: string;
+  Role?: string;
+  Icon?: string;
+  Description: string;
+  imgs: string[];
+  Technologies: string[];
+}
 
 @Component({
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
   styleUrls: ['./proyects.component.scss']
 })
-export class ProyectsComponent implements OnInit {
+export class ProyectsComponent implements OnInit, OnDestroy {
 
-  customOptions: OwlOptions = {
-    rtl: false,
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    navSpeed: 700,
-    items: 1,
-    autoplay: true,
-    autoplayTimeout: 3000
-  };
+  projects: Project[] = [];
 
-  @ViewChild('imgContainer') imgContainer: ElementRef;
+  /** Which project descriptions are expanded, by project index. */
+  expanded: Record<number, boolean> = {};
 
-  constructor(
-    public analyticsService: AnalyticsService,
-    public languageService: LanguageService,
-  ) { }
+  /** Current slide per project, by project index. */
+  slide: Record<number, number> = {};
+
+  /** Projects the visitor is hovering; their slideshow pauses. */
+  paused: Record<number, boolean> = {};
+
+  private timer: ReturnType<typeof setInterval>;
+  private sub: Subscription;
+
+  constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
+    this.sub = this.translate.stream('FeatureProjects.Projects').subscribe((p: Project[]) => {
+      this.projects = Array.isArray(p) ? p : [];
+      this.slide = {};
+    });
+    this.timer = setInterval(() => this.advance(), 4000);
   }
 
-// tslint:disable-next-line:typedef
-debug(){
+  ngOnDestroy(): void {
+    clearInterval(this.timer);
+    this.sub?.unsubscribe();
+  }
 
-  this.imgContainer.nativeElement.scroll({
-    top: this.imgContainer.nativeElement.scrollHeight,
-    left: 0,
-    behavior: 'smooth',
-  });
-}
+  goTo(i: number, n: number): void {
+    this.slide[i] = n;
+  }
 
-  // tslint:disable-next-line:typedef
-  isLTR(){
-    return this.languageService.textDirection === 'ltr';
-}
+  private advance(): void {
+    this.projects.forEach((p, i) => {
+      const count = p.imgs?.length || 0;
+      if (count > 1 && !this.paused[i]) {
+        this.slide[i] = ((this.slide[i] || 0) + 1) % count;
+      }
+    });
+  }
 }

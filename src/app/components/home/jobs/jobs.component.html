@@ -25,10 +25,13 @@
               <h4 class="title-tab-content">
                 {{ job.Title }} |
                 <span class="company-tab-content">{{ job.Tab }}</span>
-                <span class="logo-tab-content"> <img  height="{{job.height}}" width="{{job.width}}" src="assets/images/{{job.logo}}"></span>
+                <span class="logo-tab-content" *ngIf="job.logo"> <img  height="{{job.height}}" width="{{job.width}}" src="assets/images/{{job.logo}}" alt="{{ job.Tab }}"></span>
               </h4>
 
-              <h5 class="job-time">{{ job.Date }}</h5>
+              <h5 class="job-time">
+                <span><i class="far fa-calendar-alt"></i> {{ job.Date }}</span>
+                <span *ngIf="job.Location"><i class="fas fa-map-marker-alt"></i> {{ job.Location }}</span>
+              </h5>
               <!-- {{job.Description | json}} -->
               <p
                 *ngFor="

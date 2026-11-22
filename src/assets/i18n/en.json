@@ -5,52 +5,58 @@
   "Header.Item4": "Contact",
   "Header.Item5": "Documents",
   "Header.cvBtn": "Resume",
-  "Header.cvName": "CV_Jose_Hernandez_Spanish.pdf",
-
-  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Pretitle": "Hello, I'm",
   "Banner.name": "Saleem Alzoubi",
-  "Banner.jobTitle": "Software Architect | Technical Manager | Software Developer",
-  "Banner.Description": "I am <span class='underline'>Certified PMP and Scrum Master</span> with more than 10 years of experience in software development and team leadership. Proven track record as a Technical Manager, Technical Team Lead and Scrum Master, specializing in Java, Angular, and Flutter. Adept at managing technical projects, leading cross-functional teams, and delivering high-quality software solutions.",
+  "Banner.jobTitle": "Chief Technology Officer | Solution Architect | Technical Project Manager",
+  "Banner.Description": "Chief Technology Officer and Solution Architect with <span class='underline'>11+ years</span> of experience in software engineering and technical leadership, including 7 years in the Gulf region (Saudi Arabia and UAE). I set technology strategy, build engineering organizations, and deliver integration-heavy platforms for banking, fintech, education, and government. <span class='underline'>PMP · PSM II · Azure Solutions Architect Expert · AWS · OCP</span>.",
   "Banner.ActionBtn": "Contact me",
   "Banner.scanPdf": "<span class='underline'>Scan PDF Resume</span>",
-
   "AboutMe.Title": "About Me",
   "AboutMe.Paragraphs": [
-    "I am a seasoned Technical Manager with over 10 years of experience in the field. My certifications include PMP, Scrum Master, OCP, and OCA, highlighting my expertise in project management and technical leadership.",
-    "My technical skill set encompasses a broad range of areas, including server implementation, backend and frontend development, mobile applications, and database management. This comprehensive knowledge allows me to oversee all aspects of a project, from database design to frontend and mobile application development.",
-    "I have managed projects involving up to 15 team members and multiple stakeholders, excelling in project management tasks and delivering insightful reports to directors and stakeholders. My responsibilities also include overseeing team performance, reviewing code, advising on clean coding practices, and optimizing implementation and database structures for enhanced performance, security, and maintainability.",
-    "Additionally, I contribute to defining business requirements for product owners, ensuring that any gaps are addressed to provide valuable insights to end users.",
-    "Some of the technical skills I have trained and worked with include (but are not limited to):"
+    "I am a Chief Technology Officer and Solution Architect with 11+ years of experience in software engineering and technical leadership, including 7 years in Saudi Arabia and the UAE leading technical teams and technology organizations as a CTO, Technical Manager, Solution Architect, and Scrum Master.",
+    "I have a proven track record of setting technology strategy and architecting and delivering complex, integration-heavy solutions for banking, fintech, education, and government sectors, aligning technology strategy with business objectives.",
+    "I build and lead engineering organizations, drive AI adoption across products (Anthropic Claude, OpenAI GPT, and other LLM providers), design scalable microservices and SSO/identity architectures, and manage partner and stakeholder relationships from conception through delivery."
   ],
-
   "Experience.Title": "Experience",
   "Experience.Jobs": [
     {
+      "Tab": "Sawaed Elm",
+      "Title": "Chief Technology Officer (CTO)",
+      "Date": "2025 - Present",
+      "Location": "Amman, Jordan & Riyadh, Saudi Arabia (travelling between both offices)",
+      "logo": "",
+      "height": "50",
+      "width": "150",
+      "Description": [
+        "<span class='underline'>▹ Technology Strategy:</span> Serve as Chief Technology Officer for Sawaed Elm, setting overall technology strategy and owning the technical roadmap for a portfolio of fintech and education-technology products, including a bill-payment and card issuance platform and an AI-driven school management and design platform.",
+        "<span class='underline'>▹ Fintech Platform:</span> Own the technology direction of a bill-payment application enabling customers to pay utility bills (electricity, gas, and other services), overseeing integrations with partner banks and card-issuing suppliers to support in-app card issuance.",
+        "<span class='underline'>▹ School Platform:</span> Oversee the technology roadmap of a school management platform covering grading, student performance, and attendance tracking, plus real-time transportation tracking and an AI-powered design application for schools used on iPads and integrated with social media.",
+        "<span class='underline'>▹ AI Strategy:</span> Set company-wide AI strategy, driving adoption of multiple AI models (including Anthropic Claude, OpenAI GPT, and other leading LLM providers) and the build-out of AI agents to power intelligent features across the fintech and school platforms.",
+        "<span class='underline'>▹ Executive Leadership:</span> Built and lead the engineering organization, and sit on the leadership team alongside sales and business functions to align product roadmaps, delivery priorities, and technology investment with company strategy across the fintech and education business lines.",
+        "<span class='underline'>▹ Partner & Vendor Relationships:</span> Own technology-side relationships with banking partners, card-issuing suppliers, and school clients, and report on technology performance and investment to company leadership."
+      ]
+    },
+    {
       "Tab": "Tamkeen Technologies",
-      "Title": "Technical Manager",
-      "Date": "May 2023 - Current",
+      "Title": "Technical Project Manager",
+      "Date": "May 2023 - 2025",
       "logo": "tamkeen-logo.svg",
       "height": "50",
       "width": "150",
       "Description": [
         "<span class='underline'>▹ Technical Leadership & System Integration:</span> Led a team of developers skilled in Spring Boot, Java, Angular, and Flutter to build and deliver the Musaned project. This involved complex integrations with key national entities, such as the Ministry of Interior, Ministry of Human Resources and Social Development, the National Information Center, stc pay, and various banking systems. The integration ensured seamless interoperability, secure data exchanges, and smooth collaboration between platforms.",
-
         "<span class='underline'>▹ Agile Methodologies & Scrum Implementation:</span> Spearheaded the adoption of Scrum methodologies to drive iterative development and improve collaboration within the team. Facilitated Scrum ceremonies, including sprint planning, stand-ups, reviews, and retrospectives, fostering a transparent and productive working environment. This approach accelerated delivery and ensured flexibility in responding to changing requirements.",
-
         "<span class='underline'>▹ Complex Problem-Solving & Risk Mitigation:</span> Anticipated technical challenges and proactively resolved them to maintain project momentum. Acted as the primary problem-solver for the team, addressing major bugs, resolving production issues, and removing impediments, ensuring minimal disruption and continuous progress.",
-
         "<span class='underline'>▹ Mentorship & Quality Assurance:</span> Provided continuous mentorship to team members, promoting a culture of learning and innovation. Conducted regular code reviews, enforced adherence to clean coding practices, and facilitated rigorous testing processes to ensure the highest quality deliverables. Maintained a strong focus on software quality and optimization, offering guidance on system design and technical strategies for long-term success.",
-
         "<span class='underline'>▹ Sprint Management & Delivery Excellence:</span> Managed the end-to-end sprint process, ensuring clear objectives were set and achieved for each sprint cycle. Led the team to meet project milestones through disciplined sprint execution and careful task management. Conducted sprint reviews and demos, presenting outcomes and progress to stakeholders, keeping them aligned with the project vision.",
-
         "<span class='underline'>▹ Client Collaboration & Stakeholder Engagement:</span> Engaged with clients throughout the project lifecycle to gather and refine requirements, address feedback, and ensure client expectations were met or exceeded. Conducted regular demos and provided transparent updates to stakeholders, ensuring they had a clear understanding of the project’s direction and progress.",
-
         "<span class='underline'>▹ Reporting & Performance Tracking:</span> Delivered regular, detailed reports to upper management, offering insights into project achievements, potential risks, and areas for improvement. This ensured leadership had a comprehensive view of project status, helping them make informed decisions and plan strategically."
-        ]
+      ],
+      "Location": "Riyadh, Saudi Arabia"
     },
     {
       "Tab": "ELM",
-      "Title": "Technical Manager",
+      "Title": "Technical Lead & Scrum Master",
       "Date": "August 2021 - May 2023",
       "logo": "elm-logo.svg",
       "height": "50",
@@ -63,7 +69,8 @@
         "<span class='underline'>▹ Project Management & Resource Allocation:</span> Managed project scope, timelines, and resources, ensuring the project was delivered on time and within budget. Coordinated with various departments and ensured that each phase of the project was executed efficiently, meeting all deadlines and stakeholder expectations.",
         "<span class='underline'>▹ Client Collaboration & Requirement Gathering:</span> Worked directly with the Ministry of Hajj and Umrah to gather detailed requirements, provide regular progress updates, and address any feedback or changes. Ensured that client satisfaction remained a top priority through open communication and a clear understanding of project goals.",
         "<span class='underline'>▹ Stakeholder Engagement & Reporting:</span> Regularly engaged with ministry officials and other key stakeholders to present project demos, progress reports, and key metrics, ensuring transparency and fostering trust throughout the project lifecycle."
-      ]
+      ],
+      "Location": "Riyadh, Saudi Arabia"
     },
     {
       "Tab": "Yas Holding - Second Step",
@@ -79,7 +86,8 @@
         "<span class='underline'>▹ API Integration:</span> Designed and implemented RESTful APIs to integrate backend systems with the frontend and third-party services.",
         "<span class='underline'>▹ Team Collaboration:</span> Worked closely with team members and clients to gather requirements, debug issues, and deploy features on time.",
         "<span class='underline'>▹ Agile Practices:</span> Participated in Agile ceremonies, contributing to sprint planning, daily stand-ups, and retrospective meetings."
-      ]
+      ],
+      "Location": "Abu Dhabi, United Arab Emirates"
     },
     {
       "Tab": "Progresssoft Corporation",
@@ -94,7 +102,8 @@
         "<span class='underline'>▹ Code Quality:</span> Performed thorough code reviews and implemented static analysis tools like SonarQube to maintain high-quality standards.",
         "<span class='underline'>▹ Database Design:</span> Designed and optimized relational databases to support business needs while maintaining data integrity and performance.",
         "<span class='underline'>▹ Client Interaction:</span> Worked directly with clients to gather feedback, troubleshoot issues, and implement requested changes effectively."
-        ]
+      ],
+      "Location": "Amman, Jordan"
     },
     {
       "Tab": "Scientific Containment",
@@ -109,15 +118,60 @@
         "<span class='underline'>▹ End-to-End Development:</span> Took ownership of the full software lifecycle, from requirements analysis to deployment, for various projects.",
         "<span class='underline'>▹ Testing and Debugging:</span> Conducted comprehensive unit and integration testing to ensure system stability and usability.",
         "<span class='underline'>▹ Collaboration:</span> Partnered with cross-functional teams and clients to refine requirements and deliver impactful solutions."
-      ]
+      ],
+      "Location": "Irbid, Jordan"
     }
   ],
-
   "FeatureProjects.Title": "My Projects",
-  "FeatureProjects.Label": "Highlighted Project",
   "FeatureProjects.Projects": [
     {
+      "Title": "Bill Payment & Card Issuance Platform",
+      "Company": "Sawaed Elm",
+      "Role": "Chief Technology Officer",
+      "Icon": "fas fa-credit-card",
+      "Description": "A consumer fintech application that lets customers pay utility bills (electricity, gas, and other services) from one place. As CTO I own the platform's technology direction and architecture, including integrations with partner banks and card-issuing suppliers that enable <b>in-app card issuance</b>, plus AI-powered features built with leading LLM providers.",
+      "imgs": [],
+      "Technologies": [
+        "Microservices",
+        "Spring Boot",
+        "Java 21",
+        "Flutter",
+        "Angular",
+        "Payment Gateways",
+        "Card Issuing APIs",
+        "Keycloak",
+        "OAuth2",
+        "PostgreSQL",
+        "Apache Kafka",
+        "AI Agents"
+      ]
+    },
+    {
+      "Title": "AI-Driven School Management & Design Platform",
+      "Company": "Sawaed Elm",
+      "Role": "Chief Technology Officer",
+      "Icon": "fas fa-school",
+      "Description": "A school management platform covering <b>grading, student performance, and attendance</b>, with <b>real-time school transportation tracking</b> and an <b>AI-powered design application</b> used by schools on iPads and integrated with social media. I set the technology roadmap and AI strategy, using models from Anthropic Claude, OpenAI GPT, and other providers to power intelligent features.",
+      "imgs": [],
+      "Technologies": [
+        "AI Agents",
+        "LLM Integration",
+        "Claude",
+        "GPT",
+        "Flutter",
+        "iPadOS",
+        "Angular",
+        "Spring Boot",
+        "Real-time Tracking",
+        "Social Media APIs",
+        "PostgreSQL"
+      ]
+    },
+    {
       "Title": "Musaned",
+      "Company": "Tamkeen Technologies",
+      "Role": "Technical Project Manager",
+      "Icon": "fas fa-users-cog",
       "Description": "Electronic platform that aims to provide a comprehensive system to integrate and organize Labor Recruitment process from the offering Countries, digitally authenticating the Contract between the Employer and the Laborer and organizing the contractual relationship between the Privet Recruitment Offices and the External Privet Recruitment Offices. Guided by the Ministry of Human Resources and Social Development, eTawtheeq aims to facilitate the Labor Recruitment Process and protect the legal rights of the binding parties by applying a comprehensive process that starts with the recruitment and selection process of a suitable Candidate by the Employer and ends with the Candidate arrival to the Kingdom, which will be documented and authenticated through signed Contracts of all involved parties. eTawtheeq also aims to increase the awareness of the Users through informative Content about the System",
       "imgs": [
         "assets/images/projects/musaned/musaned-1.png",
@@ -132,10 +186,29 @@
         "assets/images/projects/musaned/musaned-10.png",
         "assets/images/projects/musaned/musaned-11.png"
       ],
-      "Technologies": ["Microservices","Apache Kafka","AWS S3","Springboot", "Angular", "Postgresql", "Java 21", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Apache Tomcat", "OAuth2", "JWT"]
+      "Technologies": [
+        "Microservices",
+        "Apache Kafka",
+        "AWS S3",
+        "Springboot",
+        "Angular",
+        "Postgresql",
+        "Java 21",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Apache Tomcat",
+        "OAuth2",
+        "JWT"
+      ]
     },
     {
       "Title": "Hajj Project for the Ministry of Hajj and Umrah",
+      "Company": "Elm",
+      "Role": "Technical Lead & Scrum Master",
+      "Icon": "fas fa-kaaba",
       "Description": "The <b>Hajj Project</b> is a comprehensive system developed for the <b>Ministry of Hajj and Umrah</b>, consisting of three portals and three mobile apps to streamline the management of pilgrims.<br><br>- The <b>Ministry Portal</b> allows the Ministry to manage companies and import pilgrim data from multiple sources, including Excel, CSV, and real-time integration with the <b>Nusk platform</b>. The portal features a heat map for real-time pilgrim location tracking, company management, a reporting system, and a dashboard displaying insights by nationality, location, age, gender, and more.<br><br>- The <b>Company Portal</b>, available on both web and mobile platforms, enables companies to manage their users and pilgrims, providing streamlined administrative control.<br><br>- The <b>Pilgrim Portal</b> includes two mobile apps: one for <b>pilgrims</b>, offering features such as emergency hospital locators, group communication, and Hajj step tracking, and another for <b>pilgrim group leaders</b> to track and communicate with their group members in real-time. The web portal supports both leaders and pilgrims with similar functionalities.",
       "imgs": [
         "assets/images/projects/hajj/hajj-1.png",
@@ -145,10 +218,28 @@
         "assets/images/projects/hajj/hajj-5.png",
         "assets/images/projects/hajj/hajj-6.png"
       ],
-      "Technologies": ["Microservices","Springboot", "Angular", "SQL", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Firebase", "Kubernetes", "Apache Kafka", "Apache Tomcat","OAuth2", "JWT"]
+      "Technologies": [
+        "Microservices",
+        "Springboot",
+        "Angular",
+        "SQL",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Firebase",
+        "Kubernetes",
+        "Apache Kafka",
+        "Apache Tomcat",
+        "OAuth2",
+        "JWT"
+      ]
     },
     {
       "Title": "Mauritania Government Project for the Ministry of Interior",
+      "Company": "",
+      "Role": "",
+      "Icon": "fas fa-landmark",
       "Description": "The project was developed for the Ministry of Interior in Mauritania to manage ministries and departments across all cities. It includes features for adding and updating ministries and departments, with support for managing their locations, logos, users, and working/holiday schedules. The system also allows visitors to sign in using their ID numbers and book appointments with ministries or departments. Additionally, it handles appointment management and payment processing for bookings that require payments.",
       "imgs": [
         "assets/images/projects/muritania/muritania-1.png",
@@ -160,125 +251,178 @@
         "assets/images/projects/muritania/muritania-7.png",
         "assets/images/projects/muritania/muritania-8.png"
       ],
-      "Technologies": ["Microservices","Springboot","Apache Kafka", "Angular", "Postgresql", "Java", "Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Apache Tomcat","OAuth2", "JWT"]
+      "Technologies": [
+        "Microservices",
+        "Springboot",
+        "Apache Kafka",
+        "Angular",
+        "Postgresql",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "Apache Tomcat",
+        "OAuth2",
+        "JWT"
+      ]
     },
     {
       "Title": "AlManhal for the Ministry of Education in the UAE",
+      "Company": "Second Step - Yas Holding",
+      "Role": "Full Stack Developer",
+      "Icon": "fas fa-graduation-cap",
       "Description": "The project for the Ministry of Education in the UAE is a comprehensive system designed to manage schools, departments, financial details, students, classrooms, exams, courses, quizzes, and marks. It also handles high school results and generates certificates using custom Word templates, exporting them to PDF. Additionally, the system includes a reporting module that allows data export in various file formats and extensions, providing a streamlined solution for the ministry’s educational management needs.",
       "imgs": [
         "assets/images/projects/manhal/manhal-1.png"
       ],
-      "Technologies": ["Java", "Springboot", "SQL", "Jasper Reports", "Angular", "Google Web Toolkit(GWT)"]
+      "Technologies": [
+        "Java",
+        "Springboot",
+        "SQL",
+        "Jasper Reports",
+        "Angular",
+        "Google Web Toolkit(GWT)"
+      ]
     },
     {
-      "Title": "Electronic Check Clearing (ECC) Suite  - Banks",
+      "Title": "Electronic Check Clearing (ECC) Suite - Banks",
+      "Company": "Progresssoft",
+      "Role": "Full Stack Developer",
+      "Icon": "fas fa-money-check-alt",
       "Description": "The Electronic Check Clearing (ECC) Suite revolutionizes the traditional process of handling paper checks by transforming it into a fully digital, secure, and end-to-end solution across the entire check life cycle. This system drastically reduces operational costs and time associated with check issuance and clearing. It supports nationwide implementation models, including distributed, application service provider, or hybrid models, tailored to the country’s payment landscape and efficiency needs. The PS-ECC provides intelligent business tools for administrators to monitor transactions and optimize system performance. Its extensive reporting features allow for detailed tracking and auditing through various analytical and end-of-day reports. With advanced security, seamless integrations, scalability, and a modern cloud-enabled infrastructure, PS-ECC ensures a safe and efficient clearing environment for financial institutions.",
-      "imgs": [
-        "assets/images/projects/manhal/manhal-1.png"
-      ],
-      "Technologies": ["Microservices","Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Angular", "Android", "Swift", "SQL", "Jasper Reports"]
+      "imgs": [],
+      "Technologies": [
+        "Microservices",
+        "Springboot",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "Angular",
+        "Android",
+        "Swift",
+        "SQL",
+        "Jasper Reports"
+      ]
     },
     {
       "Title": "Mandate Management System - Banks",
+      "Company": "Progresssoft",
+      "Role": "Full Stack Developer",
+      "Icon": "fas fa-file-signature",
       "Description": "The Mandate Management System (MMS) is an advanced, centralized solution designed for regulatory bodies to automate and streamline mandate management processes, all secured with a digital signature. The system enables users to generate direct debit transactions in real-time, covering mandate initiation, amendment, cancellation, deferment, continuation, transfer, enquiry, and payment verification. It integrates seamlessly with Automated Clearing House (ACH) systems, supporting ISO 20022 (MX) and other messaging formats. The system handles both unilateral mandates, which can be terminated by one party, and bilateral mandates, requiring mutual approval. It also facilitates debtor and creditor relations, allowing them to manage mandates according to rules set by the regulatory body.",
-      "imgs": [
-        "assets/images/agrourbana/agrourbana1.png",
-        "assets/images/agrourbana/agrourbana2.png",
-        "assets/images/agrourbana/agrourbana3.png",
-        "assets/images/agrourbana/agrourbana4.png",
-        "assets/images/agrourbana/agrourbana5.png"
-      ],
-      "Technologies": ["Microservices","Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "Angular", "Android", "Swift", "SQL"]
+      "imgs": [],
+      "Technologies": [
+        "Microservices",
+        "Springboot",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "Angular",
+        "Android",
+        "Swift",
+        "SQL"
+      ]
     },
-
     {
       "Title": "Jordanian Parliamentary Elections",
+      "Company": "Scientific Containment",
+      "Role": "Full Stack Developer",
+      "Icon": "fas fa-vote-yea",
       "Description": "The Jordanian Parliamentary Elections Website was developed to assist candidates in tracking their election progress. The platform provides real-time updates on the percentage of votes each candidate has received from different schools and identifies voters who have yet to cast their votes. It also features a comprehensive dashboard that displays this data visually. Additionally, the system allows designated personnel at each school to input voting data, ensuring accurate and timely updates.",
-      "imgs": [
-        "assets/images/proyex/proyex1.png",
-        "assets/images/proyex/proyex2.png",
-        "assets/images/proyex/proyex3.png",
-        "assets/images/proyex/proyex4.png",
-        "assets/images/proyex/proyex5.png",
-        "assets/images/proyex/proyex6.png",
-        "assets/images/proyex/proyex7.png",
-        "assets/images/proyex/proyex8.png",
-        "assets/images/proyex/proyex9.png",
-        "assets/images/proyex/proyex10.png",
-        "assets/images/proyex/proyex11.png",
-        "assets/images/proyex/proyex12.png"
-      ],
-      "Technologies": ["Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers", "HTML", "CSS", "Bootstrap", "JQuery", "MongoDB","Jasper Reports"]
+      "imgs": [],
+      "Technologies": [
+        "Springboot",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JQuery",
+        "MongoDB",
+        "Jasper Reports"
+      ]
     },
     {
       "Title": "SafeRoute",
+      "Company": "",
+      "Role": "",
+      "Icon": "fas fa-bus",
       "Description": "The SafeRoute is Student Bus Monitoring System Mobile App was developed to ensure the safety and monitoring of students during their daily commute. The app enables schools and parents to track the real-time location of school buses, ensuring that students are on board and following the correct routes. Parents receive notifications when their children are picked up or dropped off, while schools can monitor bus routes, track delays, and ensure compliance with safety standards. With secure access and user-friendly features, this system enhances communication between parents, drivers, and school administrators, ensuring the safety and efficiency of student transportation.",
-      "imgs": [
-        "assets/images/proyex/proyex1.png",
-        "assets/images/proyex/proyex2.png",
-        "assets/images/proyex/proyex3.png",
-        "assets/images/proyex/proyex4.png",
-        "assets/images/proyex/proyex5.png",
-        "assets/images/proyex/proyex6.png",
-        "assets/images/proyex/proyex7.png",
-        "assets/images/proyex/proyex8.png",
-        "assets/images/proyex/proyex9.png",
-        "assets/images/proyex/proyex10.png",
-        "assets/images/proyex/proyex11.png",
-        "assets/images/proyex/proyex12.png"
-      ],
-      "Technologies": ["Springboot", "Java","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers","Flutter", "Angular", "SCSS", "Firebase", "MySQL"]
+      "imgs": [],
+      "Technologies": [
+        "Springboot",
+        "Java",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "Flutter",
+        "Angular",
+        "SCSS",
+        "Firebase",
+        "MySQL"
+      ]
     },
     {
       "Title": "Patient Tracking System",
+      "Company": "Scientific Containment",
+      "Role": "Full Stack Developer",
+      "Icon": "fas fa-heartbeat",
       "Description": "The Patient Tracking System is a comprehensive platform available as both a website and mobile app, designed to manage patients' medical appointments and track their treatment journey. The system allows patients to book, reschedule, and cancel appointments seamlessly. It also provides real-time updates on upcoming treatments, medical procedures, and consultations. Additionally, patients can access their medical reports, treatment history, and receive reminders for upcoming visits. Healthcare providers can use the platform to manage patient records, track treatment progress, and communicate important updates. This system enhances the overall patient experience, ensuring smoother medical journeys with real-time communication and organized healthcare management.",
-      "imgs": [
-        "assets/images/proyex/proyex1.png",
-        "assets/images/proyex/proyex2.png",
-        "assets/images/proyex/proyex3.png",
-        "assets/images/proyex/proyex4.png",
-        "assets/images/proyex/proyex5.png",
-        "assets/images/proyex/proyex6.png",
-        "assets/images/proyex/proyex7.png",
-        "assets/images/proyex/proyex8.png",
-        "assets/images/proyex/proyex9.png",
-        "assets/images/proyex/proyex10.png",
-        "assets/images/proyex/proyex11.png",
-        "assets/images/proyex/proyex12.png"
-      ],
-      "Technologies": ["Springboot","Spring Security","Spring Data (JPA)", "Flutter", "Keycloak", "Kubernetes", "Dockers","Java","Android", "HTML", "CSS", "Bootstrap", "JQuery", "Jasper Reports", "MySQL"]
+      "imgs": [],
+      "Technologies": [
+        "Springboot",
+        "Spring Security",
+        "Spring Data (JPA)",
+        "Flutter",
+        "Keycloak",
+        "Kubernetes",
+        "Dockers",
+        "Java",
+        "Android",
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JQuery",
+        "Jasper Reports",
+        "MySQL"
+      ]
     },
     {
       "Title": "Ramthacom Mobile Application",
+      "Company": "",
+      "Role": "",
+      "Icon": "fas fa-mobile-alt",
       "Description": "The Ramthacom is Social Media Mobile Application was developed to allow users across Jordan to register using their mobile numbers and engage with content through posts, including text, images, and videos. Users can react to posts with various emotions such as like, dislike, hate, and sad. The app also offers a dedicated section for football enthusiasts to watch videos of team training sessions, goals, and match summaries, as well as live match streaming. Additional features include account management settings, where users can change their mobile number, email, name, personal image, password, delete their account, or log out.",
-      "imgs": [
-        "assets/images/tusuperplan/tusuperplan1.png",
-        "assets/images/tusuperplan/tusuperplan2.png",
-        "assets/images/tusuperplan/tusuperplan3.png",
-        "assets/images/tusuperplan/tusuperplan4.png",
-        "assets/images/tusuperplan/tusuperplan5.png"
-      ],
-      "Technologies": ["Android", "Firebase","SqlLite"]
+      "imgs": [],
+      "Technologies": [
+        "Android",
+        "Firebase",
+        "SqlLite"
+      ]
     }
   ],
-
-  "OtherProjects.Title": "More Projects",
-  "OtherProjects.Projects": [
-    {
-      "Title": "SafeRoute: Student Bus Monitoring System",
-      "Description": "Tttttt",
-      "imgs": ["assets/images/hands-game.png"],
-      "ghLink": "https://github.com/andresjosehr/hands-game",
-      "demoLink": "https://projects.andresjosehr.com/hands-game",
-      "Technologies": ["Angular", "CSS GRID", "SASS", "Angular animations"]
-    }
-  ],
-
-  "Contact.Pretitle": "And... Now?",
-  "Contact.Title": "Say Hi!",
-  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
-  "Contact.Btn": "Contact Me",
-
+  "Contact.Pretitle": "What's next?",
+  "Contact.Title": "Get In Touch",
+  "Contact.Content": "I'm open to CTO, technology leadership, and solution architecture opportunities. Based in Riyadh, Saudi Arabia with a transferable Iqama. Send me a message and I'll get back to you as soon as possible.",
   "Documents.Title": "Documents",
   "Documents.items": [
     {
@@ -286,17 +430,11 @@
       "Title": "Principles of Clean Code",
       "Description": [
         "<span class='underline'>▹ Meaningful Names:</span> <ul><li> Use descriptive and clear variable, method, and class names.</li><li>Avoid abbreviations and misleading names.</li><li>Follow consistent naming conventions.</li></ul>",
-
         "<span class='underline'>▹ Small Functions:</span> <ul><li>Keep functions small and focused on a single task.</li> <li>Avoid long parameter lists.</li> <li>Follow the Single Responsibility Principle (SRP).</li></ul>",
-
         "<span class='underline'>▹ Encapsulation and Data Hiding:</span> <ul><li>Use private fields and provide controlled access via getters and setters.</li><li>Reduce unnecessary public exposure.</li></ul>",
-
         "<span class='underline'>▹ Code Formatting and Readability:</span> <ul><li>Follow consistent indentation and spacing.</li><li>Use standard Java coding conventions.</li><li>Keep lines of code short (~80-100 characters per line).</li></ul>",
-
         "<span class='underline'>▹ Exception Handling Best Practices:</span> <ul><li>Use specific exceptions instead of generic Exception or Throwable.</li><li>Avoid empty catch blocks.</li><li>Log exceptions appropriately.</li></ul> ",
-
         "<span class='underline'>▹ Unit Testing and Code Coverage</span> <ul><li>Write unit tests for all critical business logic.</li><li>Use JUnit and Mockito for testing.</li><li>Ensure high code coverage without compromising test quality.</li></ul>",
-
         "<span class='underline'>▹ SOLID Principles:</span> <ul><li><span class='underline'>S:</span> Single Responsibility Principle (SRP) - A class should have only one reason to change. It should focus on a single responsibility.</li><li><span class='underline'>O:</span> Open/Closed Principle (OCP) - Software entities should be open for extension but closed for modification.</li><li><span class='underline'>L:</span> Liskov Substitution Principle (LSP) - Subtypes must be substitutable for their base types without altering correctness.</li><li><span class='underline'>I:</span> Interface Segregation Principle (ISP) - Clients should not be forced to depend on interfaces they do not use.</li><li><span class='underline'>D:</span> Dependency Inversion Principle (DIP) - High-level modules should not depend on low-level modules; both should depend on abstractions.</li></ul>"
       ]
     },
@@ -338,7 +476,161 @@
         "<span class='underline'>▹ Dev/Prod Parity:</span> <ul><li><span class='underline'>Keep development, staging, and production as similar as possible.</span></li><li>Ensure parity between development and production environments.</li><li>Use similar dependencies, configurations, and workflows in all environments.</li></ul>",
         "<span class='underline'>▹ Logs:</span> <ul><li><span class='underline'>Treat logs as event streams.</span></li><li>Applications should not manage log files; instead, logs should be sent to stdout/stderr.</li><li>Use log aggregators (e.g., ELK, Loki, Splunk) to centralize and analyze logs.</li></ul>",
         "<span class='underline'>▹ Admin Processes:</span> <ul><li><span class='underline'>Run admin/management tasks as one-off processes.</span></li><li>Administrative tasks (e.g., database migrations, batch jobs) should be executed as separate processes.</li><li>These tasks should be run using the same environment as the application.</li></ul>"
-              ]
+      ]
     }
-  ]
+  ],
+  "Banner.Location": "Riyadh, Saudi Arabia &nbsp;·&nbsp; Transferable Iqama",
+  "AboutMe.SkillsTitle": "Core skills & technologies",
+  "AboutMe.SkillGroups": [
+    {
+      "Title": "Leadership & Strategy",
+      "Skills": [
+        "Technology Strategy & Roadmaps",
+        "Engineering Org Building",
+        "Budgeting & Vendor Management",
+        "Stakeholder Management",
+        "Risk Management",
+        "PMP Project Management",
+        "Scrum / Kanban",
+        "Team Mentoring"
+      ]
+    },
+    {
+      "Title": "Architecture",
+      "Skills": [
+        "Solution Architecture",
+        "Microservices",
+        "Event-Driven Architecture",
+        "Domain-Driven Design",
+        "API Design (REST)",
+        "System Integration",
+        "IBM webMethods",
+        "Payment & Card Issuing Integrations"
+      ]
+    },
+    {
+      "Title": "AI & Data",
+      "Skills": [
+        "AI Strategy",
+        "LLM Integration (Claude, GPT)",
+        "AI Agents",
+        "Prompt Engineering",
+        "RAG",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Apache Kafka"
+      ]
+    },
+    {
+      "Title": "Backend & Frontend",
+      "Skills": [
+        "Java 21",
+        "Spring Boot",
+        "Spring Security",
+        "Spring Data JPA",
+        "Angular",
+        "TypeScript",
+        "Flutter",
+        "Android",
+        "Firebase"
+      ]
+    },
+    {
+      "Title": "Cloud, DevOps & Security",
+      "Skills": [
+        "AWS",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "GitLab CI/CD",
+        "Jenkins",
+        "Git",
+        "Keycloak",
+        "SSO / OAuth2 / OIDC",
+        "JWT",
+        "SonarQube"
+      ]
+    }
+  ],
+  "AboutMe.CertificationsTitle": "Certifications",
+  "AboutMe.Certifications": [
+    {
+      "Name": "Azure Solutions Architect Expert",
+      "Issuer": "Microsoft",
+      "Icon": "fab fa-microsoft"
+    },
+    {
+      "Name": "AWS Certified",
+      "Issuer": "Amazon Web Services",
+      "Icon": "fab fa-aws"
+    },
+    {
+      "Name": "Project Management Professional (PMP)",
+      "Issuer": "PMI",
+      "Icon": "fas fa-project-diagram"
+    },
+    {
+      "Name": "Professional Scrum Master II (PSM II)",
+      "Issuer": "Scrum.org",
+      "Icon": "fas fa-sync-alt"
+    },
+    {
+      "Name": "Oracle Certified Professional (OCP), Java",
+      "Issuer": "Oracle",
+      "Icon": "fab fa-java"
+    },
+    {
+      "Name": "Oracle Certified Associate (OCA), Java",
+      "Issuer": "Oracle",
+      "Icon": "fab fa-java"
+    }
+  ],
+  "AboutMe.DiagramTitle": "Reference platform architecture",
+  "AboutMe.DiagramCaption": "How I typically structure the fintech and education platforms I lead: channels, edge and identity, domain microservices, an event backbone, data, and external integrations.",
+  "FeatureProjects.Subtitle": "Selected platforms I have led, architected, or built.",
+  "Contact.Card": {
+    "Name": "Saleem Alzoubi",
+    "Title": "Chief Technology Officer & Solution Architect",
+    "Items": [
+      {
+        "Icon": "fas fa-envelope",
+        "Label": "Email",
+        "Value": "saleemHalzoubi@gmail.com",
+        "Link": "mailto:saleemhalzoubi@gmail.com"
+      },
+      {
+        "Icon": "fas fa-phone-alt",
+        "Label": "Saudi Arabia",
+        "Value": "+966 53 653 9681",
+        "Link": "tel:+966536539681"
+      },
+      {
+        "Icon": "fas fa-phone-alt",
+        "Label": "Jordan",
+        "Value": "+962 78 019 7513",
+        "Link": "tel:+962780197513"
+      },
+      {
+        "Icon": "fab fa-linkedin-in",
+        "Label": "LinkedIn",
+        "Value": "saleem-alzoubi",
+        "Link": "https://www.linkedin.com/in/saleem-alzoubi-a76164b9/"
+      },
+      {
+        "Icon": "fas fa-map-marker-alt",
+        "Label": "Location",
+        "Value": "Riyadh, Saudi Arabia",
+        "Link": ""
+      },
+      {
+        "Icon": "fas fa-id-card",
+        "Label": "Residency",
+        "Value": "Transferable Iqama",
+        "Link": ""
+      }
+    ]
+  },
+  "Contact.QrLabel": "Scan for my CV"
 }

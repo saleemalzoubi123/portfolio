@@ -6,6 +6,15 @@
 
   .tab-content{
     margin-left: 38px;
+    flex: 1;
+    background: $LightNavy;
+    border: 1px solid $LightestNavy;
+    border-radius: 12px;
+    padding: 30px 34px;
+  }
+
+  li:has(a.active){
+    border-left-color: $Green !important;
   }
 
   ul{
@@ -55,8 +64,9 @@
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     text-align: left;
     white-space: nowrap;
-    font-family: $CodeFont;
-    font-size: 13px;
+    font-family: $MainFont;
+    font-size: 14px;
+    font-weight: 500;
     color: $Slate;
   }
 
@@ -82,22 +92,27 @@
   }
 
   .job-time{
-    font-family: $CodeFont;
-    font-size: 13px;
-    font-weight: normal;
-    -webkit-letter-spacing: 0.05em;
-    -moz-letter-spacing: 0.05em;
-    -ms-letter-spacing: 0.05em;
-    letter-spacing: 0.05em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     color: $LightSlate;
-    margin-bottom: 30px;
+    margin: 10px 0 26px;
+
+    i {
+      color: $Green;
+      margin-right: 6px;
+    }
   }
 
   .job-description{
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-size: 18px;
+    padding-left: 0;
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.7;
   }
 }
 
@@ -114,6 +129,7 @@
 
     .tab-content{
       margin-left: 0px !important;
+      padding: 22px 18px !important;
     }
 
     ul {

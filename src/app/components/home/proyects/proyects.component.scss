@@ -1,266 +1,261 @@
 @import "./../../../../variables.scss";
 
 .proyects {
-  .proyect-container {
-    // height: 360px;
-    margin: 100px 0;
+  .projects-subtitle {
+    color: $Slate;
+    margin: 0 0 40px;
+  }
 
-    .proyect-info-left {
-      width: 50%;
-      margin-right: -57px;
-      margin-left: 0px;
-      display: table;
+  .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 0;
+    margin-bottom: 28px;
+    background: $LightNavy;
+    border: 1px solid $LightestNavy;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: rgba(91, 157, 255, 0.45);
+      box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.8);
     }
 
-    .proyect-info-right {
-      width: 50%;
-      margin-left: -57px;
-      margin-right: 0px;
-      display: table;
-    }
+    &--current {
+      border-color: rgba(214, 180, 106, 0.6);
+      box-shadow: inset 3px 0 0 $Gold;
 
-    .padding-left {
-      padding-left: 11%;
-    }
-
-    .padding-right {
-      padding-right: 11%;
-    }
-
-
-
-    .proyect-box {
-      display: table-cell;
-      vertical-align: middle;
-
-      .feature-proyect {
-        font-size: 13px;
-        font-weight: normal;
-        color: $Green;
-        font-family: $CodeFont;
-        margin-top: 10px;
-        padding-top: 0;
-      }
-
-      .proyect-name {
-        font-size: 28px;
-        margin: 0 0 20px;
-        color: $LightestSlate;
-
-      }
-
-      .proyect-description-box {
-        box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-        -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-        transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-        position: relative;
-        z-index: 2;
-        padding: 25px;
-        background-color: $LightNavy;
-        color: $LightSlate;
-        font-size: 18px;
-        border-radius: 3px;
-      }
-
-      .proyect-skills {
-        position: relative;
-        z-index: 2;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 25px 0 10px;
-        list-style: none;
-
-        li {
-          margin-right: 0;
-          font-family: $CodeFont;
-          font-size: 13px;
-          color: $Slate;
-          margin-bottom: 7px;
-          white-space: nowrap;
-
-          .technology {
-            padding-bottom: 5px;
-          }
-        }
-      }
-
-      .proyect-links {
-        margin-top: 10px;
-
-        i {
-          font-size: 22px;
-        }
+      .project-company {
+        color: $Gold !important;
+        background: rgba(214, 180, 106, 0.12) !important;
       }
     }
   }
-}
 
-.owl-carousel-o {
-  width: 600px;
-}
+  .project-media {
+    position: relative;
+    min-height: 260px;
+    background: #0e1830;
+    border-right: 1px solid $LightestNavy;
 
-.img-feature-proyect-container {
-  display: none;
-}
-
-@media (min-width: 768px) and (max-width: 1300px) {
-  .owl-carousel-o {
-    display: none;
   }
-  .img-feature-proyect-container {
-    width: 50%;
-    display: table !important;
-    height: -webkit-fill-available;
 
-    .img-feature-proyect-box {
-      display: table-cell;
-      vertical-align: middle;
-    }
+  .project-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    opacity: 0;
+    transition: opacity 0.8s ease;
 
-    .img-feature-proyect {
-      width: 100%;
+    &.active {
+      opacity: 1;
     }
   }
-  .proyect-info-right,
-  .proyect-info-left {
-    width: 50%;
+
+  .slider-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    z-index: 2;
+
+    button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: width 0.2s ease, background 0.2s ease;
+
+      &.active {
+        width: 22px;
+        border-radius: 4px;
+        background: $White;
+      }
+
+      &:focus { outline: none; }
+      &:focus-visible { outline: 2px solid $Green; }
+    }
   }
-}
 
-@media (min-width: 768px) {
+  .project-visual {
+    position: relative;
+    height: 100%;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    overflow: hidden;
+    background: radial-gradient(circle at 30% 20%, rgba(91, 157, 255, 0.25), transparent 55%),
+                radial-gradient(circle at 80% 90%, rgba(214, 180, 106, 0.18), transparent 50%),
+                #0e1830;
 
-  .proyect-info-right,
-  .proyect-info-left {
-    background-image: none !important;
+    i {
+      position: relative;
+      font-size: 54px;
+      color: $LightestSlate;
+      width: 108px;
+      height: 108px;
+      line-height: 108px;
+      text-align: center;
+      border-radius: 24px;
+      background: rgba(91, 157, 255, 0.12);
+      border: 1px solid rgba(91, 157, 255, 0.35);
+      box-shadow: 0 0 40px rgba(91, 157, 255, 0.2);
+    }
   }
-}
 
-@media (max-width: 768px) {
-  .owl-carousel-o {
-    display: none;
+  .project-visual-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(91, 157, 255, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(91, 157, 255, 0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(circle at center, #000 30%, transparent 75%);
   }
-  .proyects {
-    .proyect-container {
-      height: 100% !important;
-      margin: 33px 0 !important;
 
-      .proyect-info-left {
-        width: 100%;
-      }
+  .project-visual-label {
+    position: relative;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $LightSlate;
+  }
 
-      .proyect-info-right {
-        width: 100%;
-      }
+  .project-body {
+    padding: 28px 30px;
+  }
 
-      .proyect-description-box {
-        padding: 0px !important;
-        box-shadow: none !important;
-        position: relative;
-        z-index: 2;
-        padding: 25px;
-        background-color: transparent !important;
-        color: $LightSlate;
-        font-size: 18px;
-        border-radius: 3px;
-      }
+  .project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
 
-      .proyect-info-right,
-      .proyect-info-left {
-        display: block !important;
-        margin: 0px !important;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 3px;
+    span {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+  }
 
-        .proyect-box {
-          display: block;
-        }
-      }
+  .project-company {
+    color: $Green;
+    background: $GreenOpacity;
+  }
 
-      .img-feature-proyect-container {
+  .project-role {
+    color: $LightSlate;
+    border: 1px solid $LightestNavy;
+  }
+
+  .project-title {
+    color: $LightestSlate;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 12px;
+  }
+
+  .project-description {
+    position: relative;
+    max-height: 7.2em;
+    overflow: hidden;
+    font-size: 15.5px;
+    color: $Slate;
+    transition: max-height 0.3s ease;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2.4em;
+      background: linear-gradient(transparent, $LightNavy);
+    }
+
+    &.expanded {
+      max-height: 1000px;
+
+      &:after {
         display: none;
       }
     }
 
-    .proyect-info-right,
-    .proyect-info-left {
-      padding: 0px;
+    ::ng-deep b {
+      color: $LightSlate;
+      font-weight: 600;
+    }
+  }
+
+  .project-toggle {
+    background: none;
+    border: 0;
+    padding: 6px 0;
+    margin: 4px 0 14px;
+    color: $Green;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+
+    i {
+      font-size: 11px;
+      margin-left: 4px;
     }
 
-    .text-left {
-      text-align: left !important;
+    &:focus {
+      outline: none;
     }
+  }
 
-    .text-right {
-      text-align: right !important;
-    }
+  .project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 
-    .justify-content-end {
-      justify-content: left !important;
-    }
-
-    .justify-content-start {
-      justify-content: left !important;
-    }
-
-
-    .proyect-info-right .proyect-box,
-    .proyect-info-left .proyect-box {
-      padding: 20px;
-      background: #0a192fe3;
+    li {
+      font-size: 12px;
+      font-weight: 500;
+      color: $LightSlate;
+      border: 1px solid $LightestNavy;
+      border-radius: 6px;
+      padding: 2px 9px;
     }
   }
 }
 
-::ng-deep .owl-theme .owl-dots .owl-dot.active span,
-::ng-deep .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: white !important;
-}
+@media (max-width: 860px) {
+  .proyects {
+    .project-card {
+      grid-template-columns: 1fr;
+    }
 
-::ng-deep .owl-theme .owl-dots .owl-dot span {
-  background: #ffffff33;
-}
+    .project-media {
+      border-right: 0;
+      border-bottom: 1px solid $LightestNavy;
+    }
 
-.img-container {
-  width: 600px;
-  max-height: 320px;
-  overflow: auto;
-  border-radius: 3px;
-}
-
-
-/* width */
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-
-/* Track */
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #8892b0;
-  border-radius: 3px;
-}
-
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-  background: $Green;
-  border-radius: 3px;
-}
-
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-  background: $Green;
+    .project-body {
+      padding: 22px 20px;
+    }
+  }
 }

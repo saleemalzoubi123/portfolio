@@ -1,11 +1,9 @@
-import { Component, OnInit, ViewChild, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import {trigger, style, query, transition, stagger, animate } from '@angular/animations'
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
-import { TranslateService } from '@ngx-translate/core';
 import { UntypedFormControl } from '@angular/forms';
 import { LanguageService } from 'src/app/services/language/language.service';
-import { ThisReceiver } from '@angular/compiler';
 
 
 @Component({
@@ -61,8 +59,8 @@ export class HeaderComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   openCV() {
-    // Replace the URL below with your actual public Google Drive link
-    const cvUrl = 'https://drive.google.com/file/d/1CC0DfSJQ-oBKxgA0GvdhhjZyC8YwCHI2/view';
+    // Latest CTO CV, shipped with the site (src/assets/cv)
+    const cvUrl = 'assets/cv/Saleem_Alzoubi_CTO.pdf';
     window.open(cvUrl, '_blank'); // Opens in a new tab
   }
 

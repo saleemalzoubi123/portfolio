@@ -1,196 +1,195 @@
-<section class="section about" id='about'>
+<section class="section about" id="about">
   <div class="container">
     <div class="section-box">
       <div class="about-title" data-aos="fade-up">
         <h3 class="section-title">
-          <span class='n-section-title'>01.</span> {{ "AboutMe.Title" | translate }}
+          <span class="n-section-title">01.</span> {{ "AboutMe.Title" | translate }}
         </h3>
       </div>
+
       <div class="row">
         <div class="col-12 col-md-6 mb-4 mb-md-0">
           <div class="about-description">
             <p *ngFor='let text of "AboutMe.Paragraphs" | translate' [innerHTML]="text" data-aos="fade-up"
-               data-aos-duration="1000">
-            </p>
-            <ul class="skills-list" data-aos="fade-up">
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">Springboot </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Java </span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Microservices </span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Apache Kafka </span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Aws S3</span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">Flutter </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">Angular </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Kubernetes & Dockers </span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Gitlab CI/CD</span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">Jenkins</span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span class="underline">SQL </span>
-              </li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">MySQL </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">postgresql </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">MongoDB </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">Keycloack </span></li>
-              <li class="skill-element" data-aos="fade-up" data-aos-duration="1000"><span
-                class="underline">Firebase </span></li>
-            </ul>
+               data-aos-duration="1000"></p>
           </div>
         </div>
         <div class="col-12 col-md-6 mt-4 mt-md-0 text-center" data-aos="fade-up" data-aos-duration="1000">
           <div class="about-img-container">
-            <img (click)='analyticsService.sendAnalyticEvent("click_image", "about", "image")' class="rounded"
-                 width="400" height="500" src="assets/images/person.jpg" alt="Saleem Alzoubi">
+            <img class="rounded" width="400" height="500" src="assets/images/person.jpg" alt="Saleem Alzoubi">
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
-          <style>
-            .component {
-              fill: transparent;
-              stroke: #64ffda;
-              stroke-width: 2;
-            }
+      </div>
 
-            .text {
-              font-size: 14px;
-              fill: white;
-              text-anchor: middle;
-              font-family: Arial, sans-serif;
-            }
+      <!-- Certifications -->
+      <h4 class="sub-heading" data-aos="fade-up">{{ "AboutMe.CertificationsTitle" | translate }}</h4>
+      <div class="cert-grid">
+        <div class="cert-card" *ngFor='let cert of "AboutMe.Certifications" | translate' data-aos="fade-up" data-aos-duration="800">
+          <span class="cert-icon"><i [class]="cert.Icon"></i></span>
+          <div>
+            <div class="cert-name">{{ cert.Name }}</div>
+            <div class="cert-issuer">{{ cert.Issuer }}</div>
+          </div>
+        </div>
+      </div>
 
-            .arrow {
-              stroke: #8892b0;
-              stroke-width: 2;
-              marker-end: url(#arrowhead);
-            }
+      <!-- Skills -->
+      <h4 class="sub-heading" data-aos="fade-up">{{ "AboutMe.SkillsTitle" | translate }}</h4>
+      <div class="skill-groups">
+        <div class="skill-group" *ngFor='let group of "AboutMe.SkillGroups" | translate' data-aos="fade-up" data-aos-duration="800">
+          <h5 class="skill-group-title">{{ group.Title }}</h5>
+          <ul class="skill-chips">
+            <li *ngFor="let skill of group.Skills">{{ skill }}</li>
+          </ul>
+        </div>
+      </div>
 
-            .animated-rest {
-              animation: moveRest 2s linear infinite;
-            }
-
-            .animated-websocket {
-              animation: moveWebSocket 2s linear infinite;
-            }
-
-            .animated-event {
-              animation: moveEvent 2s linear infinite;
-            }
-
-            @keyframes moveRest {
-              0% {
-                stroke-dasharray: 0, 200;
-              }
-              100% {
-                stroke-dasharray: 200, 0;
-              }
-            }
-
-            @keyframes moveWebSocket {
-              0% {
-                stroke-dasharray: 0, 150;
-              }
-              100% {
-                stroke-dasharray: 150, 0;
-              }
-            }
-
-            @keyframes moveEvent {
-              0% {
-                stroke-dasharray: 0, 300;
-              }
-              100% {
-                stroke-dasharray: 300, 0;
-              }
-            }
-          </style>
-
-          <!-- Arrow Marker -->
+      <!-- Architecture diagram -->
+      <h4 class="sub-heading" data-aos="fade-up">{{ "AboutMe.DiagramTitle" | translate }}</h4>
+      <p class="diagram-caption" data-aos="fade-up">{{ "AboutMe.DiagramCaption" | translate }}</p>
+      <div class="diagram-scroll" data-aos="fade-up" data-aos-duration="1000">
+        <svg class="arch" viewBox="0 0 1000 600" role="img"
+             aria-label="Layered platform architecture: client channels, API gateway and identity, domain microservices, Kafka event backbone, data stores, and external integrations, running on Azure and AWS with Kubernetes.">
           <defs>
-            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-              <polygon points="0 0, 10 3.5, 0 7" fill="#8892b0"/>
+            <marker id="arch-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 z" class="arrow-head"/>
             </marker>
           </defs>
 
-          <rect x="150" y="200" width="900" height="700" class="component"/>
+          <!-- Layer labels -->
+          <text class="layer-label" x="0" y="52">CHANNELS</text>
+          <text class="layer-label" x="0" y="152">EDGE &amp; IDENTITY</text>
+          <text class="layer-label" x="0" y="272">DOMAIN SERVICES</text>
+          <text class="layer-label" x="0" y="376">EVENTS</text>
+          <text class="layer-label" x="0" y="474">DATA</text>
+          <text class="layer-label" x="0" y="564">PLATFORM</text>
 
-          <!-- Mobile App -->
-          <rect x="450" y="0" width="150" height="60" class="component"/>
-          <text x="525" y="40" class="text">Flutter App</text>
+          <!-- Channels -->
+          <g class="node">
+            <rect x="130" y="24" width="140" height="52" rx="8"/>
+            <text class="t" x="200" y="47">Mobile App</text><text class="s" x="200" y="64">Flutter · iOS · Android</text>
+          </g>
+          <g class="node">
+            <rect x="290" y="24" width="140" height="52" rx="8"/>
+            <text class="t" x="360" y="47">Web Portals</text><text class="s" x="360" y="64">Angular</text>
+          </g>
+          <g class="node">
+            <rect x="450" y="24" width="140" height="52" rx="8"/>
+            <text class="t" x="520" y="47">iPad Apps</text><text class="s" x="520" y="64">AI design studio</text>
+          </g>
+          <g class="node">
+            <rect x="610" y="24" width="140" height="52" rx="8"/>
+            <text class="t" x="680" y="47">Partner APIs</text><text class="s" x="680" y="64">REST · Webhooks</text>
+          </g>
 
-          <!-- Web App -->
-          <rect x="620" y="0" width="150" height="60" class="component"/>
-          <text x="700" y="40" class="text">Angular App</text>
+          <!-- Edge -->
+          <g class="node node-accent">
+            <rect x="130" y="124" width="440" height="52" rx="8"/>
+            <text class="t" x="350" y="147">API Gateway</text><text class="s" x="350" y="164">Routing · Rate limiting · BFF</text>
+          </g>
+          <g class="node node-accent">
+            <rect x="590" y="124" width="160" height="52" rx="8"/>
+            <text class="t" x="670" y="147">Identity / SSO</text><text class="s" x="670" y="164">Keycloak · OAuth2 · OIDC</text>
+          </g>
 
-          <!-- API Gateway -->
-          <rect x="550" y="200" width="100" height="60" class="component"/>
-          <text x="600" y="230" class="text">API Gateway</text>
+          <!-- Services -->
+          <g class="node">
+            <rect x="130" y="236" width="112" height="70" rx="8"/>
+            <text class="t" x="186" y="266">Payments</text><text class="s" x="186" y="284">Bill pay</text>
+          </g>
+          <g class="node">
+            <rect x="254" y="236" width="112" height="70" rx="8"/>
+            <text class="t" x="310" y="266">Card Issuing</text><text class="s" x="310" y="284">Issuer APIs</text>
+          </g>
+          <g class="node">
+            <rect x="378" y="236" width="112" height="70" rx="8"/>
+            <text class="t" x="434" y="266">School Mgmt</text><text class="s" x="434" y="284">Grades · Attendance</text>
+          </g>
+          <g class="node">
+            <rect x="502" y="236" width="112" height="70" rx="8"/>
+            <text class="t" x="558" y="266">Transport</text><text class="s" x="558" y="284">Live tracking</text>
+          </g>
+          <g class="node node-ai">
+            <rect x="626" y="236" width="124" height="70" rx="8"/>
+            <text class="t" x="688" y="266">AI Agents</text><text class="s" x="688" y="284">LLM orchestration</text>
+          </g>
 
-          <!-- Load Balancer -->
-          <rect x="550" y="330" width="100" height="60" class="component"/>
-          <text x="600" y="365" class="text">Load Balancer</text>
+          <!-- Event backbone -->
+          <g class="node node-bus">
+            <rect x="130" y="352" width="620" height="40" rx="8"/>
+            <text class="t" x="440" y="377">Event Backbone — Apache Kafka</text>
+          </g>
 
-          <!-- Service Discovery -->
-          <rect x="850" y="330" width="150" height="60" class="component"/>
-          <text x="925" y="365" class="text">Service Discovery</text>
+          <!-- Data -->
+          <g class="node node-data">
+            <rect x="130" y="444" width="140" height="56" rx="28"/>
+            <text class="t" x="200" y="469">PostgreSQL</text><text class="s" x="200" y="486">Transactional</text>
+          </g>
+          <g class="node node-data">
+            <rect x="290" y="444" width="140" height="56" rx="28"/>
+            <text class="t" x="360" y="469">Redis</text><text class="s" x="360" y="486">Cache · Sessions</text>
+          </g>
+          <g class="node node-data">
+            <rect x="450" y="444" width="140" height="56" rx="28"/>
+            <text class="t" x="520" y="469">Object Storage</text><text class="s" x="520" y="486">S3 · Blob</text>
+          </g>
+          <g class="node node-data">
+            <rect x="610" y="444" width="140" height="56" rx="28"/>
+            <text class="t" x="680" y="469">Vector Store</text><text class="s" x="680" y="486">RAG knowledge</text>
+          </g>
 
-          <!-- Microservices -->
-          <rect x="200" y="500" width="180" height="80" class="component"/>
-          <text x="290" y="540" class="text">MicroService - Event drive</text>
+          <!-- Platform -->
+          <g class="node node-platform">
+            <rect x="130" y="540" width="620" height="40" rx="8"/>
+            <text class="t" x="440" y="565">Azure · AWS · Kubernetes · Docker · GitLab CI/CD · Observability</text>
+          </g>
 
-          <rect x="500" y="500" width="180" height="80" class="component"/>
-          <text x="590" y="540" class="text">MicroService - Rest</text>
+          <!-- External integrations -->
+          <g class="node node-ext">
+            <rect x="800" y="124" width="200" height="376" rx="10"/>
+            <text class="layer-label ext-title" x="900" y="152">EXTERNAL INTEGRATIONS</text>
+          </g>
+          <g class="node">
+            <rect x="816" y="168" width="168" height="62" rx="8"/>
+            <text class="t" x="900" y="194">Partner Banks</text><text class="s" x="900" y="212">Payments · Settlement</text>
+          </g>
+          <g class="node">
+            <rect x="816" y="246" width="168" height="62" rx="8"/>
+            <text class="t" x="900" y="272">Card Suppliers</text><text class="s" x="900" y="290">Issuing · Processing</text>
+          </g>
+          <g class="node node-ai">
+            <rect x="816" y="324" width="168" height="62" rx="8"/>
+            <text class="t" x="900" y="350">LLM Providers</text><text class="s" x="900" y="368">Claude · GPT · others</text>
+          </g>
+          <g class="node">
+            <rect x="816" y="402" width="168" height="62" rx="8"/>
+            <text class="t" x="900" y="428">Gov &amp; Social APIs</text><text class="s" x="900" y="446">Identity · Sharing</text>
+          </g>
 
-          <rect x="850" y="500" width="180" height="80" class="component"/>
-          <text x="940" y="540" class="text">MicroService - Websocket</text>
-
-          <!-- Databases -->
-          <ellipse cx="275" cy="700" rx="75" ry="40" class="component"/>
-          <text x="275" y="705" class="text">DataBase</text>
-
-          <ellipse cx="600" cy="700" rx="75" ry="40" class="component"/>
-          <text x="600" y="705" class="text">DataBase</text>
-
-          <ellipse cx="925" cy="700" rx="75" ry="40" class="component"/>
-          <text x="925" y="705" class="text">DataBase</text>
-
-
-          <!-- Connections with Animation -->
-          <!-- REST Communication -->
-          <line x1="525" y1="70" x2="600" y2="200" class="arrow animated-rest"/>
-          <line x1="700" y1="70" x2="600" y2="200" class="arrow animated-rest"/>
-
-
-          <line x1="600" y1="265" x2="600" y2="330" class="arrow animated-event"/>
-          <!-- Service directions -->
-          <line x1="275" y1="490" x2="580" y2="400" class="arrow animated-event"/>
-          <line x1="600" y1="400" x2="600" y2="490" class="arrow animated-event"/>
-          <line x1="625" y1="400" x2="925" y2="490" class="arrow animated-websocket"/>
-          <line x1="925" y1="490" x2="625" y2="400" class="arrow animated-websocket"/>
-          <!-- DB directions -->
-          <line x1="260" y1="600" x2="260" y2="650" class="arrow animated-event"/>
-          <line x1="280" y1="650" x2="280" y2="600" class="arrow animated-event"/>
-
-          <line x1="590" y1="600" x2="590" y2="650" class="arrow animated-event"/>
-          <line x1="610" y1="650" x2="610" y2="600" class="arrow animated-event"/>
-
-          <line x1="910" y1="600" x2="910" y2="650" class="arrow animated-event"/>
-          <line x1="930" y1="650" x2="930" y2="600" class="arrow animated-event"/>
-
-          <!-- Footer -->
-          <text x="600" y="880" font-size="12" fill="#666666" text-anchor="middle" font-family="Arial">Microservices
-            Architecture Diagram
-          </text>
+          <!-- Flows: channels -> edge -->
+          <path class="flow" d="M200 76 V122"/>
+          <path class="flow" d="M360 76 V122"/>
+          <path class="flow" d="M520 76 V122"/>
+          <path class="flow" d="M680 76 V122"/>
+          <!-- edge -> services -->
+          <path class="flow" d="M186 176 V234"/>
+          <path class="flow" d="M310 176 V234"/>
+          <path class="flow" d="M434 176 V234"/>
+          <path class="flow" d="M558 176 V234"/>
+          <path class="flow" d="M688 176 V234"/>
+          <!-- services <-> kafka -->
+          <path class="flow flow-event" d="M186 306 V350"/>
+          <path class="flow flow-event" d="M310 306 V350"/>
+          <path class="flow flow-event" d="M434 306 V350"/>
+          <path class="flow flow-event" d="M558 306 V350"/>
+          <path class="flow flow-event" d="M688 306 V350"/>
+          <!-- kafka -> data -->
+          <path class="flow" d="M200 392 V442"/>
+          <path class="flow" d="M360 392 V442"/>
+          <path class="flow" d="M520 392 V442"/>
+          <path class="flow" d="M680 392 V442"/>
+          <!-- services -> external -->
+          <path class="flow flow-ext" d="M750 271 H798"/>
         </svg>
       </div>
     </div>

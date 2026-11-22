@@ -1,73 +1,59 @@
-<section class="section proyects" id='proyects'>
+<section class="section proyects" id="proyects">
   <div class="container">
     <div class="section-box">
       <div data-aos="fade-up" data-aos-duration="1000">
         <h3 class="section-title">
-          <span class='n-section-title'>03.</span> {{ "FeatureProjects.Title" | translate }}
+          <span class="n-section-title">03.</span> {{ "FeatureProjects.Title" | translate }}
         </h3>
+        <p class="projects-subtitle">{{ "FeatureProjects.Subtitle" | translate }}</p>
       </div>
 
-      <div *ngFor='let project of "FeatureProjects.Projects" | translate; let i = index'
-           class="d-flex proyect-container text-left" data-aos="fade-up" data-aos-duration="1000">
-        <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2==0">
-          <ng-container *ngFor="let img of project.imgs">
-            <ng-template carouselSlide>
-              <div [id]="project.Title+'slide'+i">
-                <div #imgContainer class='img-container'>
-                  <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-                </div>
-              </div>
-            </ng-template>
-          </ng-container>
-        </owl-carousel-o>
-        <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
-          <div class="img-feature-proyect-box">
-            <div class="img-container" style='width: auto;'>
-              <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-            </div>
-          </div>
-        </div>
-        <div [class.proyect-info-right]='i%2==0' [class.proyect-info-left]='i%2!=0' class="h-100"
-             [style.background-image]="'url(' + project.img + ')'">
-          <div class="proyect-box">
-            <!-- <h4 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="feature-proyect">{{"FeatureProjects.Label" | translate}}</h4>-->
-            <h5 *ngIf="isLTR()" [class.padding-left]='i%2==0' [class.padding-right]='i%2!=0'
-                class="proyect-name text-left">{{ project.Title }}</h5>
-            <h5 *ngIf="!isLTR()" [class.padding-left]='i%2!=0' [class.padding-right]='i%2==0'
-                class="proyect-name text-right">{{ project.Title }}</h5>
+      <article *ngFor="let project of projects; let i = index"
+               class="project-card" [class.project-card--current]="project.Company === 'Sawaed Elm'"
+               data-aos="fade-up" data-aos-duration="800">
 
-            <div class="proyect-description-box" [class.text-right]='!isLTR()' (click)='debug()'>
-              <p class="mb-0" [innerHTML]="project.Description">
-              </p>
-            </div>
-            <ul [class.justify-content-end]='i%2==0' [class.justify-content-start]='i%2!=0' class="proyect-skills">
-              <li *ngFor='let technology of project.Technologies' class="ml-3">
-                <span class="underline technology">{{ technology }}</span>
-              </li>
-            </ul>
-            <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-links">
-            </div>
+        <div class="project-media" *ngIf="project.imgs?.length; else visual"
+             (mouseenter)="paused[i] = true" (mouseleave)="paused[i] = false">
+          <img *ngFor="let img of project.imgs; let n = index" class="project-img"
+               [class.active]="n === (slide[i] || 0)" [src]="img" [alt]="project.Title + ' screenshot ' + (n + 1)"
+               loading="lazy">
+          <div class="slider-dots" *ngIf="project.imgs.length > 1">
+            <button type="button" *ngFor="let img of project.imgs; let n = index"
+                    [class.active]="n === (slide[i] || 0)" (click)="goTo(i, n)"
+                    [attr.aria-label]="'Show screenshot ' + (n + 1)"></button>
           </div>
         </div>
-        <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2!=0">
-          <ng-container *ngFor="let img of project.imgs">
-            <ng-template carouselSlide>
-              <div class='img-container'>
-                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
-              </div>
-            </ng-template>
-          </ng-container>
-        </owl-carousel-o>
-        <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
-          <div class="img-feature-proyect-box">
-            <div class="img-container" style='width: auto;'>
-              <img class='img-feature-proyect rounded' [src]="project.imgs[0]" [alt]="project.imgs[0]" width='600px'>
-            </div>
+
+        <ng-template #visual>
+          <div class="project-media">
+          <div class="project-visual">
+            <div class="project-visual-grid"></div>
+            <i [class]="project.Icon"></i>
+            <span class="project-visual-label">{{ project.Company || project.Title }}</span>
           </div>
+          </div>
+        </ng-template>
+
+        <div class="project-body">
+          <div class="project-meta" *ngIf="project.Company || project.Role">
+            <span class="project-company" *ngIf="project.Company">{{ project.Company }}</span>
+            <span class="project-role" *ngIf="project.Role">{{ project.Role }}</span>
+          </div>
+          <h4 class="project-title">{{ project.Title }}</h4>
+
+          <div class="project-description" [class.expanded]="expanded[i]">
+            <p class="mb-0" [innerHTML]="project.Description"></p>
+          </div>
+          <button type="button" class="project-toggle" (click)="expanded[i] = !expanded[i]">
+            {{ expanded[i] ? 'Show less' : 'Read more' }}
+            <i class="fas" [class.fa-chevron-down]="!expanded[i]" [class.fa-chevron-up]="expanded[i]"></i>
+          </button>
+
+          <ul class="project-tech">
+            <li *ngFor="let technology of project.Technologies">{{ technology }}</li>
+          </ul>
         </div>
-      </div>
-      <div>
-      </div>
+      </article>
     </div>
   </div>
 </section>

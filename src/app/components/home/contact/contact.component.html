@@ -2,36 +2,49 @@
   <div class="container contact">
     <div class="section-box">
       <div class="mb-4" data-aos="fade-up" data-aos-duration="1000">
-        <h3 class="contact-pre-title big-subtitle">
-          04. {{ "Contact.Pretitle" | translate }}
-        </h3>
-        <h4 class="e-font contact-title big-title">
-          {{ "Contact.Title" | translate }}
-        </h4>
+        <h3 class="contact-pre-title big-subtitle">05. {{ "Contact.Pretitle" | translate }}</h3>
+        <h4 class="contact-title big-title">{{ "Contact.Title" | translate }}</h4>
       </div>
-      <p data-aos="fade-up" data-aos-duration="1000">
-        {{ "Contact.Content" | translate }}
-      </p>
-      <div class="mt-5">
-        <a
-          (click)="
-            analyticsService.sendAnalyticEvent(
-              'click_send_mail',
-              'contact',
-              'email'
-            )
-          "
-          href="mailto:sleemhalzoubi@gmail.com"
-          target="_blank"
-          class="main-btn"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {{ "Contact.Btn" | translate }}
+      <p class="contact-intro" data-aos="fade-up" data-aos-duration="1000">{{ "Contact.Content" | translate }}</p>
+
+      <ng-container *ngIf='"Contact.Card" | translate as card'>
+        <div class="biz-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="biz-main">
+            <div class="biz-name">{{ card.Name }}</div>
+            <div class="biz-title">{{ card.Title }}</div>
+            <span class="biz-rule"></span>
+
+            <ul class="biz-list">
+              <li *ngFor="let item of card.Items">
+                <span class="biz-icon"><i [class]="item.Icon"></i></span>
+                <span class="biz-text">
+                  <small>{{ item.Label }}</small>
+                  <a *ngIf="item.Link" [href]="item.Link" target="_blank" rel="noopener"
+                     (click)="analyticsService.sendAnalyticEvent('click_contact_' + item.Label, 'contact', 'card')">{{ item.Value }}</a>
+                  <span *ngIf="!item.Link">{{ item.Value }}</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="biz-side">
+            <svg class="biz-mark" viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="52" class="ring"/>
+              <path d="M24 34 A46 46 0 0 1 96 30" class="arc"/>
+              <path d="M96 86 A46 46 0 0 1 24 90" class="arc arc-gold"/>
+              <text x="60" y="73">SA</text>
+            </svg>
+            <img class="biz-qr" src="assets/images/cvQrCode.png" width="120" height="120" alt="QR code linking to Saleem Alzoubi's CTO CV">
+            <span class="biz-qr-label">{{ "Contact.QrLabel" | translate }}</span>
+          </div>
+        </div>
+      </ng-container>
+
+      <div class="mt-5" data-aos="fade-up">
+        <a href="mailto:saleemhalzoubi@gmail.com" target="_blank" class="main-btn"
+           (click)="analyticsService.sendAnalyticEvent('click_send_mail', 'contact', 'email')">
+          <i class="fas fa-paper-plane mr-2"></i>{{ "Banner.ActionBtn" | translate }}
         </a>
-      </div>
-      <div class="mt-5">
-        <img src='assets/images/business-card/card-1.png' width='100%' />
       </div>
     </div>
   </div>
